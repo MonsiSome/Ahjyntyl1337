@@ -111,8 +111,7 @@ body {
     height: 15px;
     border-radius: 50%;
     background-color: #888;
-    box-shadow: -2px 2px 4px 0px rgba(221, 221, 221, 1) inset,
-    -2px 2px 2px 0px rgba(0, 0, 0, .8);
+    box-shadow: 4px 7px 6px rgba(0, 0, 0, 0.9);
 }
 
 .play-btn__input {
@@ -164,7 +163,8 @@ body {
 
 .stick {
     position: absolute;
-    width: 20px;
+    top: 110px;
+    right: 145px;
 }
 
 input[type="checkbox"]:checked~.vinyl__disk .vinyl__logo {
@@ -192,8 +192,7 @@ input[type="checkbox"]:checked~.vinyl__disk .vinyl__logo {
     height: 132px;
     z-index: 0;
     position: absolute;
-    top: 40px;
-    left: 95px;
+    transform: translate(-50%, -50%);
     background: #eee repeating-conic-gradient( rgba(212, 212, 212, 0.4), rgba(12, 12, 12, 0.17),
     rgba(12, 12, 12, 0.17), rgba(212, 212, 212, 0.4), rgba(212, 212, 212, 0.4),
     rgba(12, 12, 12, 0.17), rgba(12, 12, 12, 0.17), rgba(212, 212, 212, 0.1) 72deg,
@@ -219,8 +218,9 @@ input[type="checkbox"]:checked~.vinyl__disk .vinyl__logo {
     background: linear-gradient(90deg, rgba(173, 173, 173, 1) 0%, rgba(249, 249, 249, 1) 25%, rgba(249, 249, 249, 1) 50%, rgba(249, 249, 249, 1) 75%, rgba(173, 173, 173, 1) 100%);
     content: " ";
     position: absolute;
-    top: 37px;
-    left: 135px;
+    transform: translate(-50%, -50%);
+    bottom: 30px;
+    left: 0;
     z-index: 2;
 }
 
@@ -228,8 +228,6 @@ input[type="checkbox"]:checked~.vinyl__disk .vinyl__logo {
     content: '';
     position: absolute;
     z-index: 5;
-    top: 105px;
-    left: 163px;
     display: block;
     transform: translate(-50%, -50%);
     background: #000;
@@ -242,16 +240,14 @@ input[type="checkbox"]:checked~.vinyl__disk .vinyl__logo {
 
 }
 
-   .element1 {
+.element1 {
     z-index: 3;
     content: '';
     position: absolute;
-    height: 75px;
-    width: 74px;
-    top: 315px;
+    top: 245px;
     transform: rotate(120deg);
-    left: 75px;
-   }
+    right: -11px;
+}
 
 .top {
     background-color: #383838;
@@ -283,8 +279,9 @@ input[type="checkbox"]:checked~.vinyl__disk .vinyl__logo {
     background: linear-gradient(90deg, rgba(173, 173, 173, 1) 0%, rgba(249, 249, 249, 1) 25%, rgba(249, 249, 249, 1) 50%, rgba(249, 249, 249, 1) 75%, rgba(173, 173, 173, 1) 100%);
     content: " ";
     position: absolute;
-    top: 60px;
-    left: 154px;
+    top: 85px;
+    left: 0;
+    transform: translate(-50%, -50%);
 }
 
 .element2:after {
@@ -295,8 +292,8 @@ input[type="checkbox"]:checked~.vinyl__disk .vinyl__logo {
     height: 26px;
     width: 18px;
     background: linear-gradient(90deg, rgba(173, 173, 173, 1) 0%, rgba(249, 249, 249, 1) 25%, rgba(249, 249, 249, 1) 50%, rgba(249, 249, 249, 1) 75%, rgba(173, 173, 173, 1) 100%);
-    top: 314px;
-    left: 148px;
+    top: 212px;
+    right: -3px;
 }
 
 /* .element1:after {
@@ -305,9 +302,30 @@ input[type="checkbox"]:checked~.vinyl__disk .vinyl__logo {
     position: absolute;
     height: 75px;
     width: 24px;
-    top: 315px;
-    transform: rotate(70deg);
-    left: -153px;
-
+    top: 227px;
+    right: 16px;
+    transform: rotate(30deg);
     background: red;
 } */
+
+.turn-element {
+    position: absolute;
+    z-index: 2;
+}
+
+#play-btn:checked ~ .stick .turn-element {
+    animation-name: turn-handle;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes turn-handle {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(20deg);
+    }
+}
