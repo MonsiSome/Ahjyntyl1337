@@ -111,7 +111,8 @@ body {
     height: 15px;
     border-radius: 50%;
     background-color: #888;
-    box-shadow: 4px 7px 6px rgba(0, 0, 0, 0.9);
+    box-shadow: -2px 2px 4px 0px rgba(221, 221, 221, 1) inset,
+    -2px 2px 2px 0px rgba(0, 0, 0, .8);
 }
 
 .play-btn__input {
@@ -240,22 +241,27 @@ input[type="checkbox"]:checked~.vinyl__disk .vinyl__logo {
 
 }
 
-/*.element1 {
-    box-sizing: border-box;
-    transform: rotate(-64deg); !* положение до анимации *!
-    !*transform: rotate(-44deg); !* положение в момент анимации *!
-}*/
+   .element1 {
+    z-index: 3;
+    content: '';
+    position: absolute;
+    height: 75px;
+    width: 74px;
+    top: 315px;
+    transform: rotate(120deg);
+    left: 75px;
+   }   
 
 .top {
     background-color: #383838;
     width: 70px;
-    height: 7.5px;
+    height: 10px;
     border-top: 4px solid #212121;
 }
 
 .center {
     width: 70px;
-    height: 2px;
+    height: 1.0px;
     box-shadow: 4px 9px 12px rgba(0, 0, 0, 0.9), -4px 4px 10px rgba(0, 0, 0, 0.9);
     background-color: white;
 }
@@ -263,7 +269,7 @@ input[type="checkbox"]:checked~.vinyl__disk .vinyl__logo {
 .bottom {
     background-color: #383838;
     width: 70px;
-    height: 7.5px;
+    height: 10px;
     border-bottom: 4px solid #212121;
 }
 
@@ -292,14 +298,15 @@ input[type="checkbox"]:checked~.vinyl__disk .vinyl__logo {
     left: 148px;
 }
 
-.element1:after {
+/* .element1:after {
     z-index: 3;
     content: '';
     position: absolute;
     height: 75px;
     width: 24px;
-    top: 330px;
-    transform: rotate(30deg);
-    left: 123px;
+    top: 315px;
+    transform: rotate(70deg);
+    left: -153px;
+
     background: red;
-}
+} */
