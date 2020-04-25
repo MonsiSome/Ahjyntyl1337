@@ -47,6 +47,7 @@ body {
     position: relative;
     display: flex;
     justify-content: center;
+    align-items  : center;
     z-index: 1;
     margin-left: -120px;
     margin-right: 6px;
@@ -68,19 +69,19 @@ body {
 }
 
 .vinyl__logo {
-    width: 170px;
-    height: 170px;
+    width: 155px;
+    height: 155px;
     background-image: url(../img/vinyl5.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    border: 12px solid #000;
+    background-size: 140px;
+    border: 10px solid #000;
     border-radius: 50%;
     opacity: 1;
     z-index: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 115px;
+    margin: 0;
 
 }
 
@@ -110,8 +111,8 @@ body {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background-color: #888;
-    box-shadow: 4px 7px 6px rgba(0, 0, 0, 0.9);
+    background-color: #ababab;
+    box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.9), inset -2px 2px 2px rgb(221, 221, 221);
 }
 
 .play-btn__input {
@@ -169,7 +170,7 @@ body {
 
 input[type="checkbox"]:checked~.vinyl__disk .vinyl__logo {
     animation-name: turn_logo;
-    animation-duration: 3s;
+    animation-duration: 4s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-delay: 1s;
@@ -178,7 +179,7 @@ input[type="checkbox"]:checked~.vinyl__disk .vinyl__logo {
 
 input[type="checkbox"]:checked~.vinyl__disk .vinyl__logo::before{
     animation-name: turn_logo;
-    animation-duration: 3s;
+    animation-duration: 4s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-delay: 1s;
