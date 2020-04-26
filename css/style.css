@@ -248,8 +248,8 @@ input[type="checkbox"]:checked~.vinyl__disk .vinyl__logo::before{
     z-index: 3;
     transform: rotate(120deg);
     position: absolute;
-    top: 245px;
-    right: -14px;
+    top: 256px;
+    right: -10px;
     width: 75px;
     height: 2px;
     background-color: #383838;
