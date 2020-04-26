@@ -32,7 +32,7 @@ body {
     background-size: cover;
     background-position: 20% 50%;
     border-radius: 5px;
-    box-shadow: -4px 7px 12px 5px rgba(0, 0, 0, 0.7);
+    box-shadow: 4px 9px 12px rgba(0, 0, 0, 0.9), -4px 4px 10px rgba(0, 0, 0, 0.9);
     display: flex;
     position: relative;
 }
@@ -165,6 +165,15 @@ body {
     right: 145px;
     filter: drop-shadow(-2px 2px 3px rgba(0, 0, 0, 0.8));
     z-index: 1;
+}
+
+.stick::after {
+    content: '';
+    display: block;
+    width: 3.8em;
+    height: 3.8em;
+    border-radius: 50%;
+    position: absolute;
 }
 
 input[type="checkbox"]:checked~.vinyl__disk .vinyl__logo,
