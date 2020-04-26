@@ -321,6 +321,10 @@ input[type="checkbox"]:checked~.vinyl__disk .vinyl__logo::before{
     animation-fill-mode: forwards;
 }
 
+input[type="checkbox"]:checked~.play-btn{
+    color: rgb(235,119,41);
+}
+
 @keyframes turn-handle {
     from {
         transform: rotateZ(0deg);
