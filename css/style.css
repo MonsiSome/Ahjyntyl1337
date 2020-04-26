@@ -222,8 +222,8 @@ input[type="checkbox"]:checked~.vinyl__disk .vinyl__logo::before{
 }
 
 .elementB {
-    width: 54px;
-    height: 23px;
+    width: 47px;
+    height: 21px;
     background: linear-gradient(90deg, rgb(117, 117, 117) 0%, rgb(228, 224, 224) 25%, rgb(255, 255, 255) 50%, rgb(228, 223, 223) 75%, rgb(145, 143, 143) 100%);
     position: absolute;
     transform: translate(-50%, -50%);
@@ -238,8 +238,8 @@ input[type="checkbox"]:checked~.vinyl__disk .vinyl__logo::before{
     z-index: 5;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    width: 4em;
-    height: 4em;
+    width: 3.8em;
+    height: 3.8em;
     border: 1px solid #7F7F7F;
     background: repeating-radial-gradient(rgba(216, 216, 216, 0) 23px, rgba(216, 216, 216, 0.05) 25px, rgba(216, 216, 216, 0) 27px) content-box, repeating-radial-gradient(rgba(191, 191, 191, 0) 13px, rgba(191, 191, 191, 0.05) 25px, rgba(191, 191, 191, 0) 17px) content-box, repeating-radial-gradient(rgba(178, 178, 178, 0) 19px, rgba(178, 178, 178, 0.05) 21px, rgba(178, 178, 178, 0) 23px) content-box, conic-gradient(#D8D8D8, #BFBFBF, #E5E5E5, #D8D8D8, #c4c4c4, #e6e6e6, #E5E5E5, #BFBFBF, #E5E5E5, #BFBFBF, #E5E5E5, #e3e3e3, #BFBFBF, #B2B2B2, #E5E5E5, #CCCCCC, #c0c0c0, #e5e5e5, #E5E5E5, #CCCCCC, #E5E5E5, #BFBFBF, #CCCCCC, #E5E5E5, #D8D8D8) content-box;
 }
