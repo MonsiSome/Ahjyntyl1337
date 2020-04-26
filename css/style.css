@@ -153,6 +153,39 @@ body {
 .play-btn::after {
     transform: rotate(45deg);
 }
+input[type="checkbox"]:checked~.vinyl__disk .vinyl__logo,
+input[type="checkbox"]:checked~.vinyl__disk::before {
+    animation-name: turn_logo;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+
+}
+
+input[type="checkbox"]:checked~.vinyl__disk .vinyl__logo::before{
+    animation-name: turn_logo;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-direction: reverse;
+
+}
+
+input[type="checkbox"]:checked~.play-btn{
+    color: rgb(235,119,41);
+}
+
+@keyframes turn_logo {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
 
 .stick {
     position: absolute;
@@ -174,35 +207,7 @@ body {
     right: -31px;
 }
 
-input[type="checkbox"]:checked~.vinyl__disk .vinyl__logo,
-input[type="checkbox"]:checked~.vinyl__disk::before {
-    animation-name: turn_logo;
-    animation-duration: 4s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-delay: 1s;
 
-}
-
-input[type="checkbox"]:checked~.vinyl__disk .vinyl__logo::before{
-    animation-name: turn_logo;
-    animation-duration: 4s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-delay: 1s;
-    animation-direction: reverse;
-
-}
-
-@keyframes turn_logo {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
 
 .elementC {
     width: 135px;
@@ -323,6 +328,4 @@ input[type="checkbox"]:checked~.vinyl__disk .vinyl__logo::before{
     transform: rotate(20deg);
 }
 
-input[type="checkbox"]:checked~.play-btn{
-    color: rgb(235,119,41);
-}
+
