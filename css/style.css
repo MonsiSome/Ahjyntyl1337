@@ -312,25 +312,13 @@ input[type="checkbox"]:checked~.vinyl__disk .vinyl__logo::before{
     position: relative;
     z-index: 2;
     filter: drop-shadow(-2px 2px 3px rgba(0, 0, 0, 0.8));
+    transition: transform 0.5s linear;
 }
 
 #play-btn:checked ~ .stick .turn-element {
-    animation-name: turn-handle;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
+    transform: rotate(20deg);
 }
 
 input[type="checkbox"]:checked~.play-btn{
     color: rgb(235,119,41);
-}
-
-@keyframes turn-handle {
-    from {
-        transform: rotateZ(0deg);
-    }
-
-    to {
-        transform: rotateZ(20deg);
-    }
 }
