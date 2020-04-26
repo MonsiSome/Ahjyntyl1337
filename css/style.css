@@ -32,7 +32,7 @@ body {
     background-size: cover;
     background-position: 20% 50%;
     border-radius: 5px;
-    box-shadow: 4px 9px 12px rgba(0, 0, 0, 0.9), -4px 4px 10px rgba(0, 0, 0, 0.9);
+    box-shadow: -4px 7px 12px 5px rgba(0, 0, 0, 0.7);
     display: flex;
     position: relative;
 }
