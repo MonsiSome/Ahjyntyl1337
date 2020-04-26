@@ -176,6 +176,10 @@ input[type="checkbox"]:checked~.vinyl__disk .vinyl__logo, input[type="checkbox"]
 
 }
 
+input[type="checkbox"]:checked~.play-btn{
+    color: rgb(235,119,41);
+}
+
 input[type="checkbox"]:checked~.vinyl__disk .vinyl__logo::before{
     animation-name: turn_logo;
     animation-duration: 4s;
