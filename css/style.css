@@ -1,14 +1,3 @@
-@font-face {
-    font-family: 'icons-font';
-    src: url('../fonts/Glyphter.eot');
-    src: url('../fonts/Glyphter.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Glyphter.woff') format('woff'),
-        url('../fonts/Glyphter.ttf') format('truetype'),
-        url('../fonts/Glyphter.svg#Glyphter') format('svg');
-    font-weight: 100;
-    font-style: normal;
-}
-
 * {
     box-sizing: border-box;
 }
@@ -32,7 +21,7 @@ body {
     background-size: cover;
     background-position: 20% 50%;
     border-radius: 5px;
-    box-shadow: -4px 7px 12px 5px rgba(0, 0, 0, 0.7);
+    box-shadow: 4px 9px 12px rgba(0, 0, 0, 0.9), -4px 4px 10px rgba(0, 0, 0, 0.9);
     display: flex;
     position: relative;
 }
@@ -114,13 +103,13 @@ body {
 }
 
 .play-btn {
-    padding: 16px 14px 16px 20px;
+    padding: 6px 14px 12px 17px;
     position: absolute;
-    font-family: 'icons-font';
     bottom: 30px;
     right: 32px;
-    font-size: 1.2em;
-    font-weight: bold;
+    width: 53px;
+    height: 53px;
+    font-size: 29px;
     color: rgb(51, 51, 51);
     text-shadow: 1px 1px 0 rgba(255,255,255, 0.6);
     background-color: rgb(230, 230, 230);
@@ -165,6 +154,18 @@ body {
     right: 145px;
     filter: drop-shadow(-2px 2px 3px rgba(0, 0, 0, 0.8));
     z-index: 1;
+}
+
+.stick::after {
+    content: '';
+    display: block;
+    width: 3.8em;
+    height: 3.8em;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #8C8C8C;
+    top: -31px;
+    right: -31px;
 }
 
 input[type="checkbox"]:checked~.vinyl__disk .vinyl__logo,
