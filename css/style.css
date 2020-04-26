@@ -234,6 +234,9 @@ input[type="checkbox"]:checked~.vinyl__disk .vinyl__logo::before{
     -webkit-radial-gradient(50% 100%, 12% 50%, rgba(255, 255, 255, 0.7) 0%, rgba(255,255,255,0.1)100%),
     -webkit-radial-gradient(0% 50%, 50% 10%, rgba(255, 255, 255, 0.5) 0%, rgba(255,255,255,0) 100%),
     -webkit-radial-gradient(50% 50%, 200% 50%, rgb(230, 230, 230) 10%, rgb(217,217,217)30%, rgb(153, 153, 153) 100%);
+    transform: rotate(10deg);
+    top:-25px;
+    left:-30px;
                   }
 .elementA::before,
 .elementA::after {
@@ -307,6 +310,10 @@ input[type="checkbox"]:checked~.vinyl__disk .vinyl__logo::before{
 
 #play-btn:checked ~ .stick .turn-element {
     transform: rotate(20deg);
+}
+#play-btn:checked ~ .stick .elementA {
+    transform: rotate(-5deg);
+    transition: transform 0.5s linear;
 }
 
 input[type="checkbox"]:checked~.play-btn{
