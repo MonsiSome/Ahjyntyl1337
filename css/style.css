@@ -124,18 +124,18 @@ body {
     color: rgb(51, 51, 51);
     text-shadow: 0 0 2px;
     background-color: rgb(230, 230, 230);
-    box-shadow: 
+    box-shadow:
               rgb(38, 38, 38) 0 0px 0px 3px, /* border */
         inset rgba(179, 179, 179, 0.8) 0 0 3px 1px, /* soft SD */
         inset rgba(0, 0, 0, 0.5) 0 -1px 2px 2px, /* bottom SD */
         inset rgba(255, 255, 255, 0.5) 0 1px 1px 4px;/* top HL */
     border-radius: 50%;
-    background: 
-        repeating-radial-gradient(rgba(255, 255, 255, 0.5) 0%, 
+    background:
+        repeating-radial-gradient(rgba(255, 255, 255, 0.5) 0%,
         rgba(255, 255, 255, 0.3) 5%),
-        -webkit-radial-gradient(50% 50%, 200% 50%, 
-        rgb(209, 209, 209) 5%, 
-        rgb(182, 181, 181) 30%, 
+        -webkit-radial-gradient(50% 50%, 200% 50%,
+        rgb(209, 209, 209) 5%,
+        rgb(182, 181, 181) 30%,
         rgb(163, 163, 162) 100%);
 }
 
@@ -148,7 +148,7 @@ body {
     width: 100%;
     height: 100%;
     border-radius: inherit;
-    background-image: 
+    background-image:
         -webkit-radial-gradient(50% 0%, 10% 50%, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%),
         -webkit-radial-gradient(50% 100%, 10% 50%, rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, 0) 100%),
         -webkit-radial-gradient(0% 50%, 50% 10%, rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, 0) 100%),
@@ -165,7 +165,7 @@ body {
     right: 145px;
 }
 
-input[type="checkbox"]:checked~.vinyl__disk .vinyl__logo, 
+input[type="checkbox"]:checked~.vinyl__disk .vinyl__logo,
 input[type="checkbox"]:checked~.vinyl__disk::before {
     animation-name: turn_logo;
     animation-duration: 4s;
@@ -239,9 +239,34 @@ input[type="checkbox"]:checked~.vinyl__disk .vinyl__logo::before{
     border-radius: 50%;
     width: 3.8em;
     height: 3.8em;
-    border: 1px solid #7F7F7F;
-    background: repeating-radial-gradient(rgba(216, 216, 216, 0) 23px, rgba(216, 216, 216, 0.05) 25px, rgba(216, 216, 216, 0) 27px) content-box, repeating-radial-gradient(rgba(191, 191, 191, 0) 13px, rgba(191, 191, 191, 0.05) 25px, rgba(191, 191, 191, 0) 17px) content-box, repeating-radial-gradient(rgba(178, 178, 178, 0) 19px, rgba(178, 178, 178, 0.05) 21px, rgba(178, 178, 178, 0) 23px) content-box, conic-gradient(#D8D8D8, #BFBFBF, #E5E5E5, #D8D8D8, #c4c4c4, #e6e6e6, #E5E5E5, #BFBFBF, #E5E5E5, #BFBFBF, #E5E5E5, #e3e3e3, #BFBFBF, #B2B2B2, #E5E5E5, #CCCCCC, #c0c0c0, #e5e5e5, #E5E5E5, #CCCCCC, #E5E5E5, #BFBFBF, #CCCCCC, #E5E5E5, #D8D8D8) content-box;
+    border: 1px solid #8C8C8C;
+    background-image: -webkit-radial-gradient(50% 0%,10% 60%,rgba(255, 255, 255, 0.8) 0%,rgba(255, 255, 255, 0.1) 100%),
+        -webkit-radial-gradient(50% 100%, 12% 50%, rgba(255, 255, 255, 0.7) 0%, rgba(255,255,255,0.1)100%),
+        -webkit-radial-gradient(0% 50%, 50% 10%, rgba(255, 255, 255, 0.5) 0%, rgba(255,255,255,0) 100%),
+        -webkit-radial-gradient(50% 50%, 200% 50%, rgb(230, 230, 230) 10%, rgb(217,217,217)30%, rgb(153, 153, 153) 100%);
+                  }
+.elementA::before,
+.elementA::after {
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-image: -webkit-radial-gradient(50% 0%,10% 50%,rgba(0, 0, 0, 0.1) 0%,rgba(0, 0, 0, 0) 100%),
+        -webkit-radial-gradient(50% 100%, 10% 50%, rgba(0, 0, 0, 0.1) 0%, rgba(0,0,0,0)100%),
+        -webkit-radial-gradient(0% 50%, 50% 10%, rgba(0, 0, 0, 0.1) 0%, rgba(0,0,0,0)100%),
+        -webkit-radial-gradient(100% 50%, 50% 10%, rgba(0, 0, 0, 0.1) 0%, rgba(0,0,0,0)100%);
 }
+.elementA:before {
+    transform: rotate(67deg);
+}
+
+.elementA:after {
+    transform: rotate(-67deg);
+}
+
 
 .element1 {
     box-sizing: content-box;
@@ -305,4 +330,3 @@ input[type="checkbox"]:checked~.vinyl__disk .vinyl__logo::before{
         transform: rotateZ(20deg);
     }
 }
-
