@@ -311,6 +311,7 @@ input[type="checkbox"]:checked~.vinyl__disk .vinyl__logo::before{
 #play-btn:checked ~ .stick .turn-element {
     transform: rotate(20deg);
 }
+
 #play-btn:checked ~ .stick .elementA {
     transform: rotate(-5deg);
     transition: transform 0.5s linear;
